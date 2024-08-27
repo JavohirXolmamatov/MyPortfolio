@@ -1,0 +1,31 @@
+
+// Asosiy ranglar
+$primary-color: #007bff; // Ko'k rang
+$secondary-color: #6c757d; // Kulrang
+$success-color: #28a745; // Yashil
+$danger-color: #dc3545; // Qizil
+$warning-color: #ffc107; // Sariq
+$info-color: #17a2b8; // Ko'k-yashil
+$light-color: #f8f9fa; // Yengil
+$dark-color: #343a40; // Qorong'i
+
+
+// Qo'shimcha ranglar
+$white: #ffffff; // Oq
+$black: #000000; // Qora
+$gray-light: #f5f5f5; // Yengil kulrang
+$gray-middle: #a0a2a4;
+$gray-dark: #343a40; // Qorong'i kulrang
+$primary-light: lighten($primary-color, 10%); // Yengilroq ko'k
+$primary-dark: darken($primary-color, 10%); // Qorong'iroq ko'k
+
+// Ranglarni o'zgartirish misollari
+$primary-light: lighten($primary-color, 10%); // Yengilroq ko'k
+$primary-dark: darken($primary-color, 10%); // Qorong'iroq ko'k
+$primary-transparent: rgba($primary-color, 0.5); // Yarim shaffof ko'k
+
+
+$heading-font: 'Arial', sans-serif;
+$body-font: 'Roboto', sans-serif;
+
+
