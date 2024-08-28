@@ -1,0 +1,37 @@
+@media (max-width: 768px) {
+    .navbar-togglerr {
+        display: block !important; /* Mobil ekranlarda ko'rinadigan qiling */
+        color: white; /* Mobil ekranlarda rangini oq qilib qo'ying */
+    }
+
+    .nav-items {
+        display: none !important;
+        flex-direction:column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        max-height: 0; /* Initially hide the navigation items */
+        overflow: hidden; /* Prevent content from overflowing */
+        opacity: 0; /* Make it invisible initially */
+        transition: max-height 0.3s ease-out, opacity 0.3s ease-out; /* Transition for smooth effect */
+    }
+
+    .nav-items.active {
+        display: block !important;
+        transition: 1s ease;
+        max-height: 500px; /* Enough height to show the content */
+        opacity: 1; /* Make it visible */
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .nav-item a {
+        color: white;
+        text-decoration: none;
+    }
+}

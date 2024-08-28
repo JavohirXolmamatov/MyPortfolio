@@ -21,6 +21,20 @@ header {
             }
         }
     }
+    /* CSS code for the toggler and responsive navbar  */
+    .navbar-togglerr {
+        display: none;
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+    }
+    /* Agar qo'shimcha rang ishlatmoqchi bo'lsangiz, bu yerda qo'shing */
+    .navbar-togglerr span {
+        color: #fff; /* Tugma ichidagi belgi rangini oq qilib qo'ying */
+    }
+        
 }
 
 footer {
