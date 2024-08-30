@@ -5,3 +5,9 @@
 @import 'layout';
 @import 'components';
 @import 'responsive';
+
+@import './responsive/responsive-small';
+@import './responsive/responsive-medium';
+@import './responsive/responsive-large';
+@import './responsive/responsive-xlarge';
+@import './responsive/responsive-xxlarge';

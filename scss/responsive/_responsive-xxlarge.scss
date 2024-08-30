@@ -1,4 +1,5 @@
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+    // Medium devices uchun kod
     .navbar-togglerr {
         display: block !important; /* Mobil ekranlarda ko'rinadigan qiling */
         color: white; /* Mobil ekranlarda rangini oq qilib qo'ying */
