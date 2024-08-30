@@ -3,6 +3,7 @@
     .navbar-toglerr (
         display: block !important; /* Mobil ekranlarda ko'rinadigan qiling */
         color: white; /* Mobil ekranlarda rangini oq qilib qo'ying */
+        border: none;
     )
     .nav-items {
         display: none !important;
@@ -24,6 +25,7 @@
         transition: 1s ease;
         max-height: 500px; /* Enough height to show the content */
         opacity: 1; /* Make it visible */
+        border: none;
     }
 
     .nav-item {

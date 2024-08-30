@@ -8,7 +8,7 @@ document.getElementById('download-btn').addEventListener('click', function() {
 
 // JavaScript code to toggle the navbar
 document.addEventListener('DOMContentLoaded', function() {
-  const toggler = document.getElementById('navbar-togglerr');
+  const toggler = document.getElementById('navbar-toggler');
   const navItems = document.querySelector('.nav-items');
 
   if (toggler && navItems) {
