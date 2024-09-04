@@ -7,9 +7,14 @@ body {
 
 .home-section {
     background-image: url(/images/laptop.jpg);
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.row {
+    margin: 0;
 }
 
 li,ul{
