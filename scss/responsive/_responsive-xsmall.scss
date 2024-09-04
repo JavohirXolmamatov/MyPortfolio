@@ -1,8 +1,9 @@
 // `sm` applies to x-small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-    .main {
+    body {
         width: 100vh;
     }
+    
     /* Header section styles start */
     .header-section {
         position: fixed;
@@ -182,4 +183,7 @@
             display: none;
         }
     }
+
+    /* footer section style start */
+    
 }
