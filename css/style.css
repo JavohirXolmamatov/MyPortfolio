@@ -4,10 +4,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.main {
-  width: 100vh;
-}
-
 .home-section {
   background-image: url(/images/laptop.jpg);
   width: 100%;
@@ -63,6 +59,9 @@ span {
 }
 
 @media (max-width: 575.98px) {
+  .main {
+    width: 100vh;
+  }
   /* Header section styles start */
   .header-section {
     position: fixed;
