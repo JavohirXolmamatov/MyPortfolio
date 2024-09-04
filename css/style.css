@@ -58,6 +58,11 @@ span {
 }
 
 @media (max-width: 575.98px) {
+  main {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   /* Header section styles start */
   .header-section {
     position: fixed;
