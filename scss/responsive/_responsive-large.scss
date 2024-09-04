@@ -1,2 +1,220 @@
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) {
+    /* Header section styles start */
+    .header-section {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        vertical-align: middle;
+        align-items: center;
+        background-color: $gray-dark;
+        z-index: 999;
+        box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.5); /* Soya qo'shish */
+        nav {
+            margin: 0;
+            ul {
+                display: flex;
+                gap: 3rem;
+                justify-content: flex-end;
+                margin: 0;
+                align-items: center;
+                height: 60px;
+
+                .first-item {
+                    margin-right: auto;
+                    
+                    a{
+                        font-size: 1.8rem;
+                        color: $danger-color;
+                    }
+                }
+            }
+
+            a {
+                font-size: 1.2rem;
+
+                &:hover {
+                    color: $danger-color;
+                    transition: 0.5s ease;
+                }
+            }
+
+            .bi {
+                &::before {
+                    font-size: 28px;
+                }
+            }
+
+
+            .sidebar {
+                position: fixed;
+                top: 0;
+                right: 0;
+                height: 100vh;
+                width: 250px;
+                // background-color: $gray-dark;
+                background-color: rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(10px);
+                box-shadow: -10px 0 10px rgba(0, 0, 0, 0.5);
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                transform: translateX(100%); /* Sidebarni tashqarida joylashtirish */
+                transition: transform 0.3s ease; /* Transform xususiyatiga o'tish qo'llash */
+                
+            }
+
+            .sidebar.show {
+                transform: translateX(0); /* Sidebarni ko'rinadigan holatga o'tkazish */
+            }
+
+            .menu-button {
+                display: none;
+            }
+        }
+    }
+
+    /* home section style */
+    .home-section {
+        height: 100vh;
+
+        .container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .row {
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            vertical-align: middle;
+
+        }
+    }
+
+    /* my project section style */
+    .project-section {
+        .card {
+            overflow: hidden;
+            background-color: $gray-light;
+            padding-bottom: 1rem;
+            height: 450px;
+            img {
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+                transition: transform 0.3s ease; /* O'tish animatsiyasi */
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.1); /* Rasmni 10% ga kattalashtiradi */ 
+                }
+            }
+
+        
+            .card-body{
+                text-align: center;
+                .h5 {
+                    font-weight: 600;
+                }
+                p {
+                    padding-bottom: 1rem;
+                }
+
+                a{
+                    position: absolute; /* Tugmani aniq joylashtirish */
+                    bottom: 20px; /* Kartochkaning pastki qismidan 10px yuqorida */
+                    transform: translateX(70%); /* Tugmani markazlashtirish */
+                    width: 40%; /* Tugma kengligi */
+                    left: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    /* skills section style */
+    .skills-part {
+        .item {
+            .item-text {
+                display: flex;
+                justify-content: space-between;
+
+                span {
+                    color: $black;
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                }
+
+                .w-90 {
+                    width: 10%;
+                }
+
+                .w-80 {
+                    width: 20%;
+                }
+
+                .w-60 {
+                    width: 40%;
+                }
+
+                .w-70 {
+                    width: 30%;
+                }
+
+            }
+
+            .progress {
+                .w-90 {
+                    width: 90%;
+                    background-color: $primary-color;
+                }
+                .w-80 {
+                    width: 80%;
+                    background-color: $primary-color;
+                }
+                .w-60 {
+                    width: 60%;
+                    background-color: $primary-color;
+                }
+                .w-70 {
+                    width: 70%;
+                    background-color: $primary-color;
+                }
+            }
+        }
+    }
+
+    /* contact section style */
+    .contact-section {
+        .row {
+            text-align: center;
+
+            form {
+                width: 80%;
+                margin: 0 auto;
+                label {
+                    float: left;
+                }
+
+                .btn1 {
+                    border: 0;
+                }
+            }
+        }
+    }
+
+    /* footer section style */
+    .footer-section {
+        background-color: $gray-dark;
+        .icon a {
+            margin: 0 10px; /* Har ikki tomonida 10px bo'shliq */
+            color: white; /* Ijtimoiy tarmoqlar ikonkalari rangini oq qilib belgilash */
+            &:hover {
+                color: $danger-color;
+                transition: 0.5s ease;
+            }
+        }
+    }
+
+}

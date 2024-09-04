@@ -13,26 +13,25 @@
     <!-- === header section start === -->
     <header class="header-section">
         <div class="container">
-            <div class="navigation-section">
-                <nav class="navbar">
-                    <div class="navbar-logo">
-                        <a href="#"><span>Javohir</span></a>
-                    </div>
-
-                     <!-- Toggler button -->
-                    <button class="navbar-togglerr" id="navbar-toggler">
-                        <span>&#9776;</span>
-                    </button>
-
-                    <ul class="nav-items">
-                        <li class="nav-item"><a href="#home">Home</a></li>
-                        <li class="nav-item"><a href="#about">About me</a></li>
-                        <li class="nav-item"><a href="#project">My projects</a></li>
-                        <li class="nav-item"><a href="#skills">Skills</a></li>
-                        <li class="nav-item"><a href="#contact">Contact</a></li>
-                    </ul>  
-                </nav>
-            </div>
+            <nav>
+                <ul class="sidebar">
+                    <li class="first-item" onclick="hideSidebar()"><a href="#"><i class="bi bi-x-lg"></i></a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">My-projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul>
+                    <li class="first-item"><a href="#"><span>Javohir</span></a></li>
+                    <li class="hideOnMobile"><a href="#home">Home</a></li>
+                    <li class="hideOnMobile"><a href="#about">About</a></li>
+                    <li class="hideOnMobile"><a href="#project">My-projects</a></li>
+                    <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+                    <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                    <li class="menu menu-button" onclick="showSidebar()"><a href="#"><i class="bi bi-list"></i></a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <!-- === header section finish === -->

@@ -6,18 +6,17 @@ document.getElementById('download-btn').addEventListener('click', function() {
   });
   
 
-// JavaScript code to toggle the navbar
-document.addEventListener('DOMContentLoaded', function() {
-  const toggler = document.getElementById('navbar-toggler');
-  const navItems = document.querySelector('.nav-items');
+function showSidebar() {
+  const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'flex'
 
-  if (toggler && navItems) {
-    toggler.addEventListener('click', function() {
-      navItems.classList.toggle('active');
-    });
-  } else {
-    console.error('Toggler or navItems element not found.');
-  }
-});
+  setTimeout(() => {
+    sidebar.classList.add('show'); // .show sinfini qo'shib transform o'tishini faollashtirish
+  }, 10); // 10ms kechikish bilan transform o'tishini boshlash
+}
 
-
+function hideSidebar(){
+  const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'none'
+  
+}

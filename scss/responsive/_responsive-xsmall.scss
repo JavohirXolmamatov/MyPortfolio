@@ -1,6 +1,5 @@
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991px) {
-    /* Header section styles start */
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
     .header-section {
         position: fixed;
         display: flex;
@@ -61,17 +60,17 @@
                 align-items: flex-start;
                 justify-content: flex-start;
                 transform: translateX(100%); /* Sidebarni tashqarida joylashtirish */
-                transition: transform 0.3s ease; /* Transform xususiyatiga o'tish qo'llash */  
+                transition: transform 0.3s ease; /* Transform xususiyatiga o'tish qo'llash */
+                
             }
 
             .sidebar.show {
                 transform: translateX(0); /* Sidebarni ko'rinadigan holatga o'tkazish */
             }
 
-            .menu-button {
+            .hideOnMobile {
                 display: none;
             }
-
         }
     }
 }

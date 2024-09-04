@@ -1,3 +1,76 @@
-@media (min-width: 576px) {
+@media (min-width: 576px) and (max-width: 767.8px) {
     // Small devices uchun kod
+    .header-section {
+      position: fixed;
+      display: flex;
+      width: 100%;
+      vertical-align: middle;
+      align-items: center;
+      background-color: $gray-dark;
+      z-index: 999;
+      box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.5); /* Soya qo'shish */
+      nav {
+          margin: 0;
+          ul {
+              display: flex;
+              gap: 3rem;
+              justify-content: flex-end;
+              margin: 0;
+              align-items: center;
+              height: 60px;
+
+              .first-item {
+                  margin-right: auto;
+                  
+                  a{
+                      font-size: 1.8rem;
+                      color: $danger-color;
+                  }
+              }
+          }
+
+          a {
+              font-size: 1.2rem;
+
+              &:hover {
+                  color: $danger-color;
+                  transition: 0.5s ease;
+              }
+          }
+
+          .bi {
+              &::before {
+                  font-size: 28px;
+              }
+          }
+
+
+          .sidebar {
+              position: fixed;
+              top: 0;
+              right: 0;
+              height: 100vh;
+              width: 250px;
+              // background-color: $gray-dark;
+              background-color: rgba(255, 255, 255, 0.2);
+              backdrop-filter: blur(10px);
+              box-shadow: -10px 0 10px rgba(0, 0, 0, 0.5);
+              display: none;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              transform: translateX(100%); /* Sidebarni tashqarida joylashtirish */
+              transition: transform 0.3s ease; /* Transform xususiyatiga o'tish qo'llash */
+              
+          }
+
+          .sidebar.show {
+              transform: translateX(0); /* Sidebarni ko'rinadigan holatga o'tkazish */
+          }
+      }
+  }
+
+    .hideOnMobile {
+      display: none;
+    }
   }

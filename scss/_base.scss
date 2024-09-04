@@ -5,13 +5,20 @@ body {
     font-family: $body-font;
 }
 
+.home-section {
+    background-image: url(/images/laptop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 li,ul{
     list-style-type: none;
 }
 
 a{
     text-decoration: none;
-    color: $white;
+    color: $light-color;
 }
 
 span {
