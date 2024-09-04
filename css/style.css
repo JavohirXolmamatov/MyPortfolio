@@ -26,7 +26,6 @@ a {
 }
 
 span {
-  font-size: 2rem;
   font-weight: 600;
   color: #dc3545;
 }
@@ -59,9 +58,6 @@ span {
 }
 
 @media (max-width: 575.98px) {
-  body {
-    width: 100vh;
-  }
   /* Header section styles start */
   .header-section {
     position: fixed;
