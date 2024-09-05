@@ -4,6 +4,16 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.header-section {
+  top: 0;
+}
+
+main {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .home-section {
   background-image: url(/images/laptop.jpg);
   width: 100%;
@@ -81,7 +91,7 @@ span {
   }
   .header-section nav ul {
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
     justify-content: flex-end;
     margin: 0;
     align-items: center;
@@ -91,15 +101,18 @@ span {
     margin-right: auto;
   }
   .header-section nav ul .first-item a {
-    font-size: 1.8rem;
     color: #dc3545;
   }
-  .header-section nav a {
+  .header-section nav ul a {
     font-size: 1.2rem;
+    color: #343a40;
   }
-  .header-section nav a:hover {
+  .header-section nav ul a:hover {
     color: #dc3545;
     transition: 0.5s ease;
+  }
+  .header-section nav ul .menu-button a {
+    color: white;
   }
   .header-section nav .bi::before {
     font-size: 28px;
@@ -108,7 +121,7 @@ span {
     position: fixed;
     top: 0;
     right: 0;
-    height: 100vh;
+    height: 45vh;
     width: 250px;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);

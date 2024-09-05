@@ -4,6 +4,15 @@ body {
     padding: 0;
     font-family: $body-font;
 }
+.header-section {
+    top: 0;
+}
+
+main {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 .home-section {
     background-image: url(/images/laptop.jpg);

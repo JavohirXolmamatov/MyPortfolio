@@ -22,7 +22,7 @@
             margin: 0;
             ul {
                 display: flex;
-                gap: 3rem;
+                gap: 1rem;
                 justify-content: flex-end;
                 margin: 0;
                 align-items: center;
@@ -32,20 +32,26 @@
                     margin-right: auto;
                     
                     a{
-                        font-size: 1.8rem;
                         color: $danger-color;
                     }
                 }
-            }
 
-            a {
-                font-size: 1.2rem;
+                a {
+                    font-size: 1.2rem;
+                    color: $gray-dark;
+    
+                    &:hover {
+                        color: $danger-color;
+                        transition: 0.5s ease;
+                    }
+                }
 
-                &:hover {
-                    color: $danger-color;
-                    transition: 0.5s ease;
+                .menu-button a{
+                    color: white;
                 }
             }
+
+            
 
             .bi {
                 &::before {
@@ -58,7 +64,7 @@
                 position: fixed;
                 top: 0;
                 right: 0;
-                height: 100vh;
+                height: 45vh;
                 width: 250px;
                 // background-color: $gray-dark;
                 background-color: rgba(255, 255, 255, 0.2);
