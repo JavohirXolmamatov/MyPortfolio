@@ -1,76 +1,217 @@
+/* Landspace devices */
 @media (min-width: 576px) and (max-width: 767.8px) {
-    // Small devices uchun kod
-    .header-section {
-      position: fixed;
-      display: flex;
-      width: 100%;
-      vertical-align: middle;
-      align-items: center;
-      background-color: $gray-dark;
-      z-index: 999;
-      box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.5); /* Soya qo'shish */
-      nav {
-          margin: 0;
-          ul {
-              display: flex;
-              gap: 3rem;
-              justify-content: flex-end;
-              margin: 0;
-              align-items: center;
-              height: 60px;
-
-              .first-item {
-                  margin-right: auto;
-                  
-                  a{
-                      font-size: 1.8rem;
-                      color: $danger-color;
-                  }
-              }
-          }
-
-          a {
-              font-size: 1.2rem;
-
-              &:hover {
-                  color: $danger-color;
-                  transition: 0.5s ease;
-              }
-          }
-
-          .bi {
-              &::before {
-                  font-size: 28px;
-              }
-          }
-
-
-          .sidebar {
-              position: fixed;
-              top: 0;
-              right: 0;
-              height: 100vh;
-              width: 250px;
-              // background-color: $gray-dark;
-              background-color: rgba(255, 255, 255, 0.2);
-              backdrop-filter: blur(10px);
-              box-shadow: -10px 0 10px rgba(0, 0, 0, 0.5);
-              display: none;
-              flex-direction: column;
-              align-items: flex-start;
-              justify-content: flex-start;
-              transform: translateX(100%); /* Sidebarni tashqarida joylashtirish */
-              transition: transform 0.3s ease; /* Transform xususiyatiga o'tish qo'llash */
-              
-          }
-
-          .sidebar.show {
-              transform: translateX(0); /* Sidebarni ko'rinadigan holatga o'tkazish */
-          }
-      }
-  }
-
-    .hideOnMobile {
-      display: none;
+    .container {
+        max-width: 700px;
     }
-  }
+    main {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    /* Header section styles start */
+    .header-section {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        top: 0;
+        left: 0;
+        vertical-align: middle;
+        align-items: center;
+        background-color: $gray-dark;
+        z-index: 999;
+        box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.5); /* Soya qo'shish */
+        nav {
+            margin: 0;
+            ul {
+                display: flex;
+                gap: 1rem;
+                justify-content: flex-end;
+                margin: 0;
+                align-items: center;
+                height: 60px;
+
+                .first-item {
+                    margin-right: auto;
+                    
+                    a{
+                        color: $danger-color;
+                    }
+                }
+
+                a {
+                    font-size: 1.2rem;
+                    color: $gray-dark;
+    
+                    &:hover {
+                        color: $danger-color;
+                        transition: 0.5s ease;
+                    }
+                }
+
+                .menu-button a{
+                    color: white;
+                }
+            }
+
+            
+
+            .bi {
+                &::before {
+                    font-size: 28px;
+                }
+            }
+
+
+            .sidebar {
+                position: fixed;
+                top: 0;
+                right: 0;
+                height: 70vh;
+                width: 250px;
+                // background-color: $gray-dark;
+                background-color: rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(10px);
+                box-shadow: -10px 0 10px rgba(0, 0, 0, 0.5);
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                transform: translateX(100%); /* Sidebarni tashqarida joylashtirish */
+                transition: transform 0.3s ease; /* Transform xususiyatiga o'tish qo'llash */
+                
+            }
+
+            .sidebar.show {
+                transform: translateX(0); /* Sidebarni ko'rinadigan holatga o'tkazish */
+            }
+
+            .hideOnMobile {
+                display: none;
+            }
+        }
+    }
+    /* Header section styles finish */
+
+    /* Home section styles start */
+    .home-section {
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 40px;
+
+        .home-body {
+            padding-top: 20px;
+
+            h1 {
+                color: $gray-middle;
+            }
+
+            p {
+                color: $gray-light;
+            }
+        }
+    }
+
+    /* about section style start */
+    .about-section {
+        .row {
+            // margin: 0;
+        }
+    }
+
+    /* project section start */
+    .project-section {
+        .row {
+            row-gap: 2rem;
+        }
+        .project-title {
+            padding-bottom: 0px;
+        }
+        .card {
+            text-align: center;
+            padding-bottom: 20px;
+            min-height: 430px;
+        }
+
+        .card-button {
+            position: absolute;
+            bottom: 25px; /* Tugmani kartaning pastki qismiga joylashtirish */
+            left: 50%;
+            transform: translateX(-50%); /* Tugmani gorizontal markazlash */
+            width: 90%; /* Tugma kengligini o'rnating, kerakli miqdor */
+            text-align: center; /* Tugma markazda bo'lishi uchun */
+        }
+    }
+
+
+    /* skills section style start */
+    .skills-section {
+        .skills-part {
+            .col-lg-6 {
+                margin-top: 0;
+            }
+            .item {
+                .item-text {
+                    display: flex;
+                    justify-content: space-between;
+    
+                    span {
+                        color: $black;
+                        font-weight: 500;
+                        font-size: 1.5rem;
+                    }
+    
+                    .w-90 {
+                        width: 10%;
+                    }
+    
+                    .w-80 {
+                        width: 20%;
+                    }
+    
+                    .w-60 {
+                        width: 40%;
+                    }
+    
+                    .w-70 {
+                        width: 30%;
+                    }
+    
+                }
+    
+                .progress {
+                    .w-90 {
+                        width: 90%;
+                        background-color: $primary-color;
+                    }
+                    .w-80 {
+                        width: 80%;
+                        background-color: $primary-color;
+                    }
+                    .w-60 {
+                        width: 60%;
+                        background-color: $primary-color;
+                    }
+                    .w-70 {
+                        width: 70%;
+                        background-color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    /* contact section style start */
+    .contact-section {
+        .xsmall-none {
+            display: none;
+        }
+    }
+
+    /* footer section style start */
+    footer {
+        footer {
+            
+        }        
+    }
+}

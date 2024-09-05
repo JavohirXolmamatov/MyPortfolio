@@ -157,6 +157,9 @@ span {
   }
   /* about section style start */
   /* project section start */
+  .project-section .row {
+    gap: 3rem;
+  }
   .project-section .project-title {
     padding-bottom: 0px;
   }
@@ -211,11 +214,23 @@ span {
   }
   /* footer section style start */
 }
+/* Landspace devices */
 @media (min-width: 576px) and (max-width: 767.8px) {
+  .container {
+    max-width: 700px;
+  }
+  main {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  /* Header section styles start */
   .header-section {
     position: fixed;
     display: flex;
     width: 100%;
+    top: 0;
+    left: 0;
     vertical-align: middle;
     align-items: center;
     background-color: #343a40;
@@ -227,7 +242,7 @@ span {
   }
   .header-section nav ul {
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
     justify-content: flex-end;
     margin: 0;
     align-items: center;
@@ -237,15 +252,18 @@ span {
     margin-right: auto;
   }
   .header-section nav ul .first-item a {
-    font-size: 1.8rem;
     color: #dc3545;
   }
-  .header-section nav a {
+  .header-section nav ul a {
     font-size: 1.2rem;
+    color: #343a40;
   }
-  .header-section nav a:hover {
+  .header-section nav ul a:hover {
     color: #dc3545;
     transition: 0.5s ease;
+  }
+  .header-section nav ul .menu-button a {
+    color: white;
   }
   .header-section nav .bi::before {
     font-size: 28px;
@@ -254,7 +272,7 @@ span {
     position: fixed;
     top: 0;
     right: 0;
-    height: 100vh;
+    height: 70vh;
     width: 250px;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
@@ -269,9 +287,92 @@ span {
   .header-section nav .sidebar.show {
     transform: translateX(0); /* Sidebarni ko'rinadigan holatga o'tkazish */
   }
-  .hideOnMobile {
+  .header-section nav .hideOnMobile {
     display: none;
   }
+  /* Header section styles finish */
+  /* Home section styles start */
+  .home-section {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .home-section .home-body {
+    padding-top: 20px;
+  }
+  .home-section .home-body h1 {
+    color: #a0a2a4;
+  }
+  .home-section .home-body p {
+    color: #f5f5f5;
+  }
+  /* about section style start */
+  /* project section start */
+  .project-section .row {
+    row-gap: 2rem;
+  }
+  .project-section .project-title {
+    padding-bottom: 0px;
+  }
+  .project-section .card {
+    text-align: center;
+    padding-bottom: 20px;
+    min-height: 430px;
+  }
+  .project-section .card-button {
+    position: absolute;
+    bottom: 25px; /* Tugmani kartaning pastki qismiga joylashtirish */
+    left: 50%;
+    transform: translateX(-50%); /* Tugmani gorizontal markazlash */
+    width: 90%; /* Tugma kengligini o'rnating, kerakli miqdor */
+    text-align: center; /* Tugma markazda bo'lishi uchun */
+  }
+  /* skills section style start */
+  .skills-section .skills-part .col-lg-6 {
+    margin-top: 0;
+  }
+  .skills-section .skills-part .item .item-text {
+    display: flex;
+    justify-content: space-between;
+  }
+  .skills-section .skills-part .item .item-text span {
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  .skills-section .skills-part .item .item-text .w-90 {
+    width: 10%;
+  }
+  .skills-section .skills-part .item .item-text .w-80 {
+    width: 20%;
+  }
+  .skills-section .skills-part .item .item-text .w-60 {
+    width: 40%;
+  }
+  .skills-section .skills-part .item .item-text .w-70 {
+    width: 30%;
+  }
+  .skills-section .skills-part .item .progress .w-90 {
+    width: 90%;
+    background-color: #007bff;
+  }
+  .skills-section .skills-part .item .progress .w-80 {
+    width: 80%;
+    background-color: #007bff;
+  }
+  .skills-section .skills-part .item .progress .w-60 {
+    width: 60%;
+    background-color: #007bff;
+  }
+  .skills-section .skills-part .item .progress .w-70 {
+    width: 70%;
+    background-color: #007bff;
+  }
+  /* contact section style start */
+  .contact-section .xsmall-none {
+    display: none;
+  }
+  /* footer section style start */
 }
 @media (min-width: 768px) and (max-width: 991px) {
   /* Header section styles start */
