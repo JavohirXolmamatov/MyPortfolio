@@ -1,5 +1,13 @@
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991.8px) {
+    .container {
+        max-width: 700px;
+    }
+    main {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
     /* Header section styles start */
     .header-section {
         position: fixed;
@@ -73,5 +81,123 @@
             }
 
         }
+    }
+
+     /* Home section styles start */
+     .home-section {
+        width: 100%;
+        height: 100%;
+        padding-top: 100px;
+        padding-bottom: 40px;
+
+        .home-body {
+            padding-top: 20px;
+
+            h1 {
+                color: $gray-middle;
+            }
+
+            p {
+                color: $gray-light;
+            }
+        }
+    }
+
+    /* about section style start */
+
+    /* project section start */
+    .project-section {
+        .row {
+            row-gap: 2rem;
+        }
+        .project-title {
+            padding-bottom: 0px;
+        }
+        .card {
+            text-align: center;
+            padding-bottom: 20px;
+            min-height: 430px;
+        }
+
+        .card-button {
+            position: absolute;
+            bottom: 25px; /* Tugmani kartaning pastki qismiga joylashtirish */
+            left: 50%;
+            transform: translateX(-50%); /* Tugmani gorizontal markazlash */
+            width: 90%; /* Tugma kengligini o'rnating, kerakli miqdor */
+            text-align: center; /* Tugma markazda bo'lishi uchun */
+        }
+    }
+
+
+    /* skills section style start */
+    .skills-section {
+        .skills-part {
+            .col-lg-6 {
+                margin-top: 0;
+            }
+            .item {
+                .item-text {
+                    display: flex;
+                    justify-content: space-between;
+    
+                    span {
+                        color: $black;
+                        font-weight: 500;
+                        font-size: 1.5rem;
+                    }
+    
+                    .w-90 {
+                        width: 10%;
+                    }
+    
+                    .w-80 {
+                        width: 20%;
+                    }
+    
+                    .w-60 {
+                        width: 40%;
+                    }
+    
+                    .w-70 {
+                        width: 30%;
+                    }
+    
+                }
+    
+                .progress {
+                    .w-90 {
+                        width: 90%;
+                        background-color: $primary-color;
+                    }
+                    .w-80 {
+                        width: 80%;
+                        background-color: $primary-color;
+                    }
+                    .w-60 {
+                        width: 60%;
+                        background-color: $primary-color;
+                    }
+                    .w-70 {
+                        width: 70%;
+                        background-color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    /* contact section style start */
+    .contact-section {
+        .xsmall-none {
+            display: none;
+        }
+    }
+
+    /* footer section style start */
+    footer {
+        footer {
+            
+        }        
     }
 }

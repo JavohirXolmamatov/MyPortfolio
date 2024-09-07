@@ -374,7 +374,15 @@ span {
   }
   /* footer section style start */
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991.8px) {
+  .container {
+    max-width: 700px;
+  }
+  main {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   /* Header section styles start */
   .header-section {
     position: fixed;
@@ -436,6 +444,89 @@ span {
   .header-section nav .menu-button {
     display: none;
   }
+  /* Home section styles start */
+  .home-section {
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+  .home-section .home-body {
+    padding-top: 20px;
+  }
+  .home-section .home-body h1 {
+    color: #a0a2a4;
+  }
+  .home-section .home-body p {
+    color: #f5f5f5;
+  }
+  /* about section style start */
+  /* project section start */
+  .project-section .row {
+    row-gap: 2rem;
+  }
+  .project-section .project-title {
+    padding-bottom: 0px;
+  }
+  .project-section .card {
+    text-align: center;
+    padding-bottom: 20px;
+    min-height: 430px;
+  }
+  .project-section .card-button {
+    position: absolute;
+    bottom: 25px; /* Tugmani kartaning pastki qismiga joylashtirish */
+    left: 50%;
+    transform: translateX(-50%); /* Tugmani gorizontal markazlash */
+    width: 90%; /* Tugma kengligini o'rnating, kerakli miqdor */
+    text-align: center; /* Tugma markazda bo'lishi uchun */
+  }
+  /* skills section style start */
+  .skills-section .skills-part .col-lg-6 {
+    margin-top: 0;
+  }
+  .skills-section .skills-part .item .item-text {
+    display: flex;
+    justify-content: space-between;
+  }
+  .skills-section .skills-part .item .item-text span {
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  .skills-section .skills-part .item .item-text .w-90 {
+    width: 10%;
+  }
+  .skills-section .skills-part .item .item-text .w-80 {
+    width: 20%;
+  }
+  .skills-section .skills-part .item .item-text .w-60 {
+    width: 40%;
+  }
+  .skills-section .skills-part .item .item-text .w-70 {
+    width: 30%;
+  }
+  .skills-section .skills-part .item .progress .w-90 {
+    width: 90%;
+    background-color: #007bff;
+  }
+  .skills-section .skills-part .item .progress .w-80 {
+    width: 80%;
+    background-color: #007bff;
+  }
+  .skills-section .skills-part .item .progress .w-60 {
+    width: 60%;
+    background-color: #007bff;
+  }
+  .skills-section .skills-part .item .progress .w-70 {
+    width: 70%;
+    background-color: #007bff;
+  }
+  /* contact section style start */
+  .contact-section .xsmall-none {
+    display: none;
+  }
+  /* footer section style start */
 }
 @media (min-width: 992px) {
   /* Header section styles start */
@@ -501,15 +592,38 @@ span {
   }
   /* home section style */
   .home-section {
+    display: flex;
+    vertical-align: middle;
+    justify-items: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
-    margin-bottom: 40px;
+    padding-top: 60px;
   }
-  .home-section .container {
-    width: 100%;
-    height: 100%;
+  .home-section .home-body {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    justify-content: center;
   }
+  .home-section .home-body h1 {
+    color: #a0a2a4;
+  }
+  .home-section .home-body p {
+    color: #f5f5f5;
+  }
+  /* about section style start */
   /* my project section style */
+  .project-section {
+    padding: 50px 0 100px 0;
+    background-color: #f5f5f5;
+  }
+  .project-section .project-title {
+    padding-bottom: 50px;
+  }
+  .project-section .row {
+    row-gap: 1.5rem;
+  }
   .project-section .card {
     overflow: hidden;
     background-color: #f5f5f5;
@@ -543,22 +657,70 @@ span {
     right: 0;
   }
   /* skills section style */
-  c .contact-section .row {
+  .skills-section .skills-part .col-lg-6 {
+    margin-top: 0;
+  }
+  .skills-section .skills-part .item .item-text {
+    display: flex;
+    justify-content: space-between;
+  }
+  .skills-section .skills-part .item .item-text span {
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  .skills-section .skills-part .item .item-text .w-90 {
+    width: 10%;
+  }
+  .skills-section .skills-part .item .item-text .w-80 {
+    width: 20%;
+  }
+  .skills-section .skills-part .item .item-text .w-60 {
+    width: 40%;
+  }
+  .skills-section .skills-part .item .item-text .w-70 {
+    width: 30%;
+  }
+  .skills-section .skills-part .item .progress .w-90 {
+    width: 90%;
+    background-color: #007bff;
+  }
+  .skills-section .skills-part .item .progress .w-80 {
+    width: 80%;
+    background-color: #007bff;
+  }
+  .skills-section .skills-part .item .progress .w-60 {
+    width: 60%;
+    background-color: #007bff;
+  }
+  .skills-section .skills-part .item .progress .w-70 {
+    width: 70%;
+    background-color: #007bff;
+  }
+  /* contact section style */
+  .contact-section {
+    padding-top: 80px;
+    background-color: #f5f5f5;
+  }
+  .contact-section .row {
     text-align: center;
   }
-  c .contact-section .row form {
+  .contact-section .row form {
     width: 80%;
     margin: 0 auto;
   }
-  c .contact-section .row form label {
+  .contact-section .row form label {
     float: left;
   }
-  c .contact-section .row form .btn1 {
+  .contact-section .row form .btn1 {
     border: 0;
   }
   /* footer section style */
   .footer-section {
     background-color: #343a40;
+  }
+  .footer-section .container {
+    margin-top: 0 !important;
   }
   .footer-section .icon a {
     margin: 0 10px; /* Har ikki tomonida 10px bo'shliq */
